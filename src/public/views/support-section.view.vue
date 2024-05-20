@@ -26,14 +26,13 @@ export default {
   <section class="landing-section" :data-header-color="headerColor">
     <section class="contacto">
       <div class="contenedor">
-        <h2 class="titulo">Contáctanos</h2>
-        <p class="parrafo">Comunícate con nosotros utilizando el formulario de contacto a continuación.
-          Esperamos con ansias escucharte y ayudarte con tus necesidades.</p>
+        <h2 class="titulo">{{$t('home.fourthSection')}}</h2>
+        <p class="parrafo">{{$t('home.fourthSectionText')}}</p>
         <form @submit.prevent="submitForm" class="form">
-          <input type="text" id="name" v-model="formData.name" required class="input" placeholder="Ingrese Nombre">
-          <input type="email" id="email" v-model="formData.email" required class="input" placeholder="Ingrese Email">
-          <textarea id="message" v-model="formData.message" required class="input" placeholder="Ingrese Mensaje"></textarea>
-          <button type="submit" class="input">Enviar</button>
+          <input type="text" id="name" v-model="formData.name" required class="input" :placeholder="$t('home.contactName')">
+          <input type="email" id="email" v-model="formData.email" required class="input" :placeholder="$t('home.contactEmail')">
+          <textarea id="message" v-model="formData.message" required class="input" :placeholder="$t('home.contactMessage')"></textarea>
+          <button type="submit" class="input">{{$t('home.contactButton')}}</button>
         </form>
       </div>
     </section>

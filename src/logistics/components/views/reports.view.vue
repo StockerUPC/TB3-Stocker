@@ -49,36 +49,36 @@ export default {
       <section class="services">
         <div class="containerS">
           <div class="boxS">
-            <h3>Overview</h3>
+            <h3>{{$t('reports.overview')}}</h3>
             <img class="chart1" src="../../../assets/images/overview.png"/>
           </div>
 
           <div class="boxS">
-            <h3>Best selling category</h3>
+            <h3>{{$t('reports.bestSelling')}}</h3>
             <img class="chart1" src="../../../assets/images/bestSellingCategory.png"/>
           </div>
         </div>
 
         <div class="containerS2">
           <div class="boxS">
-            <h3>Profit & Revenue</h3>
+            <h3>{{$t('reports.profitRevenue')}}</h3>
             <img class="chart1" src="../../../assets/images/profit.png"/>
           </div>
         </div>
         <div class="containerS2">
           <div class="boxS">
-            <h3>Best Selling Stock</h3>
+            <h3>{{$t('reports.bestSellingStock')}}</h3>
             <div class="table">
               <table>
                 <thead>
                 <tr>
-                  <th>Position</th>
-                  <th>Name</th>
-                  <th>ID</th>
-                  <th>Category</th>
-                  <th>Remaining Quantity</th>
-                  <th>Generated</th>
-                  <th>Photo</th>
+                  <th>{{$t('reports.tablePosition')}}</th>
+                  <th>{{$t('reports.tableNames')}}</th>
+                  <th>{{$t('reports.tableId')}}</th>
+                  <th>{{$t('reports.tableCategory')}}</th>
+                  <th>{{$t('reports.tableRemainingQuantity')}}</th>
+                  <th>{{$t('reports.tableGenerated')}}</th>
+                  <th>{{$t('reports.tablePhoto')}}</th>
                 </tr>
                 </thead>
                 <tbody>

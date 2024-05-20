@@ -14,8 +14,8 @@ export default {
     <section class="footer">
       <div class="footer-container">
         <small>
-          Copyright &copy; {{ currentYear }} - Stocker<br>
-          Todos los derechos reservados
+          Copyright &copy; {{ currentYear }} - Stocker
+          <p>{{$t('home.footerSection')}}</p>
         </small>
       </div>
     </section>

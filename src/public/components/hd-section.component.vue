@@ -1,15 +1,10 @@
 <script>
+import i18n from "../../i18n.js";
 export default {
   name: "hd-section",
   data() {
     return {
       logoSrc: "logo_white.webp",
-      products: [
-        { name: 'Nuestra Propuesta', link: '/'},
-        { name: 'Información General', link: '/' },
-        { name: 'Nuestros Servicios', link: '/' },
-
-      ],
       navigationOptions: [
         { name: 'Cuenta', link: '/login' },
       ],
@@ -30,13 +25,20 @@ export default {
       items: [
         {
           label: 'Español',
-          icon: 'language_spanish'
+          icon: 'language_spanish',
+          command: ()=> {this.changeLanguage('es');}
         },
         {
           label: 'English',
-          icon: 'language_us'
+          icon: 'language_us',
+          command: ()=> {this.changeLanguage('en');}
         }
       ]
+    }
+  },
+  methods:{
+    changeLanguage(lang){
+      i18n.global.locale.value = lang;
     }
   },
   mounted() {
@@ -94,7 +96,7 @@ export default {
         <li v-for="(option, index) in navigationOptions" :key="index">
           <router-link :to="option.link">
             <i class="pi pi-sign-in"></i>
-            <a>Iniciar Sesión</a>
+            <a>{{$t('home.login')}}</a>
           </router-link>
         </li>
         <li>

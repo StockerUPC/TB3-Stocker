@@ -19,49 +19,49 @@ export default {
       <section class="services">
         <div class="containerS">
           <div class="boxS">
-            <h3>Sales Overview</h3>
+            <h3>{{$t('dashboard.salesOverview')}}</h3>
             <img class="chart1" src="../../../assets/images/salesOverview.png"/>
           </div>
 
           <div class="boxS">
-            <h3>Inventory Summary</h3>
+            <h3>{{$t('dashboard.inventorySummary')}}</h3>
             <img class="chart1" src="../../../assets/images/inventorySummary.png"/>
           </div>
         </div>
 
         <div class="containerS">
           <div class="boxS">
-            <h3>Purchase Overview</h3>
+            <h3>{{$t('dashboard.purchaseOverview')}}</h3>
             <img class="chart1" src="../../../assets/images/purchaseOverview.png"/>
           </div>
 
           <div class="boxS">
-            <h3>Product Summary</h3>
+            <h3>{{$t('dashboard.productSummary')}}</h3>
             <img class="chart1" src="../../../assets/images/productSummary.png"/>
           </div>
         </div>
         <div class="containerS">
           <div class="boxS">
-            <h3>Sales & Purchase</h3>
+            <h3>{{$t('dashboard.salesPurchase')}}</h3>
             <img class="chart1" src="../../../assets/images/chart.png"/>
           </div>
 
           <div class="boxS">
-            <h3>Order Summary</h3>
+            <h3>{{$t('dashboard.orderSummary')}}</h3>
             <img class="chart2" src="../../../assets/images/chart2.png"/>
           </div>
         </div>
         <div class="containerS">
           <div class="boxS">
-            <h3>Top Selling Stock</h3>
+            <h3>{{$t('dashboard.topSelling')}}</h3>
             <div class="table">
               <table>
                <thead>
                 <tr>
-                  <th>Name</th>
-                  <th>Sold Quantity</th>
-                  <th>Remaining Quantity</th>
-                  <th>Price</th>
+                  <th>{{$t('dashboard.tableName')}}</th>
+                  <th>{{$t('dashboard.tableSoldQuantity')}}</th>
+                  <th>{{$t('dashboard.tableRemainingQuantity')}}</th>
+                  <th>{{$t('dashboard.tablePrice')}}</th>
                 </tr>
                </thead>
                 <tbody>
@@ -77,7 +77,7 @@ export default {
           </div>
 
           <div class="boxS">
-            <h3>Low Quantity Stock</h3>
+            <h3>{{$t('dashboard.lowQuantity')}}</h3>
             <img class="chart2" src="../../../assets/images/LowQuantityStock.png"/>
           </div>
         </div>

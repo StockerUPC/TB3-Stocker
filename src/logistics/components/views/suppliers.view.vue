@@ -30,17 +30,17 @@ export default {
     <div>
       <div class="containerS2">
         <div class="boxS">
-          <h3>Suppliers</h3>
+          <h3>{{$t('suppliers.suppliers')}}</h3>
           <div class="table">
             <table>
               <thead>
               <tr>
-                <th>Supplier Name</th>
-                <th>Product</th>
-                <th>Contact Number</th>
-                <th>Email</th>
-                <th>Type</th>
-                <th>On the Way</th>
+                <th>{{$t('suppliers.tableSupplierNames')}}</th>
+                <th>{{$t('suppliers.tableProduct')}}</th>
+                <th>{{$t('suppliers.tableSupplierEmail')}}</th>
+                <th>{{$t('suppliers.tableSupplierPhone')}}</th>
+                <th>{{$t('suppliers.tableSupplierType')}}</th>
+                <th>{{$t('suppliers.tableSupplierOnTheWay')}}</th>
               </tr>
               </thead>
               <tbody>

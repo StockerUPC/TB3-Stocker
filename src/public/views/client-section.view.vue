@@ -15,13 +15,13 @@ export default {
   <section class="landing-section" :data-header-color="headerColor">
     <div class="client-div">
       <header>
-        <h2>{{ pageTitle }}</h2>
-        <p>{{ pageDescription }}</p>
+        <h2>{{$t('home.firstSection')}}</h2>
+        <p>{{$t('home.firstSectionSubtitle')}}</p>
       </header>
       <section class="InformacionGeneral">
         <div class="ContainerIG">
           <p class="texto-prop">
-            Nuestro sistema se centra en ofrecer una solución integral y fácil de usar que apoya el crecimiento y la eficiencia operativa de los pequeños negocios.
+            {{$t('home.firstSectionText')}}
           </p>
         </div>
       </section>

@@ -1,4 +1,5 @@
 <script>
+import i18n from "../../i18n.js";
 export default {
   name: "hd-section-notfound",
   data(){
@@ -7,13 +8,20 @@ export default {
       items: [
         {
           label: 'Español',
-          icon: 'language_spanish'
+          icon: 'language_spanish',
+          command: ()=> {this.changeLanguage('es');}
         },
         {
           label: 'English',
-          icon: 'language_us'
+          icon: 'language_us',
+          command: ()=> {this.changeLanguage('en');}
         }
       ]
+    }
+  },
+  methods:{
+    changeLanguage(lang){
+      i18n.global.locale.value = lang;
     }
   }
 }

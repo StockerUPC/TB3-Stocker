@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import PrimeVue from "primevue/config";
+import i18n from "./i18n.js";
 import 'primeicons/primeicons.css';
 import Button from "primevue/button";
 import Sidebar from "primevue/sidebar";
@@ -21,6 +22,7 @@ createApp(App)
     .component('pv-card', Card)
     .component('pv-divider', Divider)
     .component('pv-splitbutton', SplitButton)
+    .use(i18n)
     .use(router)
     .use(PrimeVue)
     .mount('#app')

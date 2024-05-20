@@ -33,23 +33,23 @@ export default {
       <section class="services">
         <div class="containerS">
           <div class="boxS">
-            <h3>Overall Orders</h3>
+            <h3>{{$t('orders.overallOrders')}}</h3>
             <img style="width: 95%; height: auto" src="../../../assets/images/overallOrder.png"/>
           </div>
         </div>
         <div class="containerS">
           <div class="boxS">
-            <h3>Orders</h3>
+            <h3>{{$t('orders.tableTitle')}}</h3>
             <div class="table">
               <table>
                 <thead>
                 <tr>
-                  <th>Order ID</th>
-                  <th>Product Name</th>
-                  <th>Order Value</th>
-                  <th>Quantity</th>
-                  <th>Expected Delivery</th>
-                  <th>Status</th>
+                  <th>{{$t('orders.tableOrderId')}}</th>
+                  <th>{{$t('orders.tableProduct')}}</th>
+                  <th>{{$t('orders.tableOrderValue')}}</th>
+                  <th>{{$t('orders.tableQuantity')}}</th>
+                  <th>{{$t('orders.tableExpectedDelivery')}}</th>
+                  <th>{{$t('orders.tableStatus')}}</th>
                 </tr>
                 </thead>
                 <tbody>

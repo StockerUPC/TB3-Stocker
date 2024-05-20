@@ -59,33 +59,32 @@ export default {
            <li>
              <router-link to="/stocker/dashboard" active-class="active-link">
                <ion-icon name="home-outline"></ion-icon>
-               <span>Dashboard</span>
+               <span>{{$t('stocker.dashboard')}}</span>
              </router-link>
            </li>
            <li>
-
                <router-link to="/stocker/inventory" active-class="active-link">
                  <ion-icon name="reader-outline"></ion-icon>
-                 <span>Inventario</span>
+                 <span>{{$t('stocker.inventory')}}</span>
                </router-link>
 
            </li>
            <li>
              <router-link to="/stocker/reports" active-class="active-link">
                <ion-icon name="bar-chart-outline"></ion-icon>
-               <span>Reportes</span>
+               <span>{{$t('stocker.reports')}}</span>
              </router-link>
            </li>
            <li>
              <router-link to="/stocker/suppliers" active-class="active-link">
                <ion-icon name="person-circle-outline"></ion-icon>
-               <span>Proveedores</span>
+               <span>{{$t('stocker.suppliers')}}</span>
               </router-link>
            </li>
            <li>
              <router-link to="/stocker/orders" active-class="active-link">
                <ion-icon name="cube-outline"></ion-icon>
-               <span>Órdenes</span>
+               <span>{{$t('stocker.orders')}}</span>
              </router-link>
            </li>
          </ul>
@@ -95,15 +94,15 @@ export default {
          <nav class="navegacion">
            <ul>
              <li>
-               <router-link to="#">
+               <router-link to="/stocker/settings" active-class="active-link">
                  <ion-icon name="cog-outline"></ion-icon>
-                 <span>Configuración</span>
+                 <span>{{$t('stocker.settings')}}</span>
                </router-link>
              </li>
              <li>
                <router-link to="/login">
                  <ion-icon name="log-out-outline"></ion-icon>
-                 <span>Cerrar Sesión</span>
+                 <span>{{$t('stocker.logout')}}</span>
                </router-link>
              </li>
            </ul>

@@ -15,17 +15,14 @@ export default {
   <section class="landing-section" :data-header-color="headerColor">
     <div class="inventory-div">
       <header>
-        <h2>{{ pageTitle }}</h2>
-        <p>{{ pageDescription }}</p>
+        <h2>{{$t('home.thirdSection')}}</h2>
+        <p>{{$t('home.thirdSectionSubtitle')}}</p>
       </header>
       <section class="InformacionGeneral">
         <div class="ContainerIG">
           <p class="texto-prop">
-            Descubra cómo Stocker puede transformar la gestión de su inventario y llevar su negocio al siguiente nivel. Experimente la facilidad de uso, la precisión y la potencia de esta solución integral.
-
-            No espere más, contacte con nosotros ahora mismo y dé un paso hacia una gestión de inventario optimizada y eficiente.<br><br>
+            {{$t('home.thirdSectionText')}}
           </p>
-
         </div>
       </section>
     </div>

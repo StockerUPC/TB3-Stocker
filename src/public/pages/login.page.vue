@@ -60,19 +60,19 @@ export default {
     <input type="checkbox" id="chk" aria-hidden="true">
     <div class="signUp">
       <form @submit.prevent="register">
-        <label for="chk" aria-hidden="true">Sign Up</label>
-        <input type="text" v-model="registerForm.name" placeholder="Nombre" required/>
-        <input type="email" v-model="registerForm.email" placeholder="Correo electrónico" required/>
-        <input type="password" v-model="registerForm.password" placeholder="Contraseña" required/>
-        <button type="submit">Registrarse</button>
+        <label for="chk" aria-hidden="true">{{$t('login.registerTitle')}}</label>
+        <input type="text" v-model="registerForm.name" :placeholder="$t('login.registerName')" required/>
+        <input type="email" v-model="registerForm.email" :placeholder="$t('login.registerEmail')" required/>
+        <input type="password" v-model="registerForm.password" :placeholder="$t('login.registerPassword')" required/>
+        <button type="submit">{{$t('login.registerButton')}}</button>
       </form>
     </div>
     <div class="signIn">
       <form @submit.prevent="login">
-        <label for="chk" aria-hidden="true">Login</label>
-        <input type="email" v-model="loginForm.email" placeholder="Correo electrónico" required/>
-        <input type="password" v-model="loginForm.password" placeholder="Contraseña" required>
-        <button type="submit">Iniciar Sesión</button>
+        <label for="chk" aria-hidden="true" class="centered">{{$t('login.logTitle')}}</label>
+        <input type="email" v-model="loginForm.email" :placeholder="$t('login.logEmail')" required/>
+        <input type="password" v-model="loginForm.password" :placeholder="$t('login.logPassword')" required>
+        <button type="submit">{{$t('login.logButton')}}</button>
       </form>
     </div>
   </div>
@@ -98,6 +98,7 @@ body {
   border-radius: 10px;
   box-shadow: 5px 20px 50px #000;
 }
+
 #chk{
   display: none;
 }
@@ -108,7 +109,7 @@ body {
 }
 label{
   color: #fff;
-  font-size: 2.3em;
+  font-size: 2em;
   justify-content:center;
   display: flex;
   margin: 60px;

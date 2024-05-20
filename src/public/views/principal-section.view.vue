@@ -14,13 +14,13 @@ export default {
   <section class="landing-section" :data-header-color="headerColor">
     <div class="principal-div">
       <header class="principal-header">
-        <h2>Disfrute de Stocker</h2>
-        <p>Conozca todo lo que tenemos para ofrecerle.</p>
+        <h2>{{$t('home.title')}}</h2>
+        <p>{{$t('home.subtitle')}}</p>
       </header>
 
       <footer class="principal-footer">
         <div>
-          <pv-button><router-link to="/subscription">Pruebe ahora</router-link></pv-button>        </div>
+          <pv-button><router-link to="/subscription">{{$t('home.button')}}</router-link></pv-button>        </div>
       </footer>
     </div>
     <div class="secondary-div">

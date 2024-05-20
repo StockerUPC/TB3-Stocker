@@ -42,23 +42,23 @@ export default {
       <section class="services">
         <div class="containerS">
           <div class="boxS">
-            <h3>Overall Inventory</h3>
+            <h3>{{$t('inventory.overallInventory')}}</h3>
             <img style="width: 90%; height: auto" src="../../../assets/images/overallInventory.png"/>
           </div>
         </div>
         <div class="containerS">
           <div class="boxS">
-            <h3>Top Selling Stock</h3>
+            <h3>{{$t('inventory.topSelling')}}</h3>
             <div class="table">
               <table>
                 <thead>
                 <tr>
-                  <th>Name</th>
-                  <th>Price</th>
-                  <th>Quantity</th>
-                  <th>Expiry Date</th>
-                  <th>Available</th>
-                  <th>Photo</th>
+                  <th>{{$t('inventory.tableNames')}}</th>
+                  <th>{{$t('inventory.tablePrice')}}</th>
+                  <th>{{$t('inventory.tableQuantity')}}</th>
+                  <th>{{$t('inventory.tableExpiry')}}</th>
+                  <th>{{$t('inventory.tableAvailability')}}</th>
+                  <th>{{$t('inventory.tablePhoto')}}</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -67,7 +67,7 @@ export default {
                   <td>S/.{{ product.price }}</td>
                   <td>{{ product.quantity }}</td>
                   <td>{{ product.expiryDate }}</td>
-                  <td :style="{color: product.available ? '#17bc6e' : '#DA3E33'}">{{ product.available ? 'In-stock' : 'Out of Stock' }}</td>
+                  <td :style="{color: product.available ? '#17bc6e' : '#DA3E33'}">{{ product.available ? $t('inventory.inStock') : $t('inventory.outOfStock') }}</td>
                   <td><img :src="product.photoUrl" @load="setImageWidth" ref="productImage"></td>
                 </tr>
                 </tbody>

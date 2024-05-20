@@ -13,14 +13,14 @@ export default {
   <section class="landing-section" :data-header-color="headerColor">
     <div class="stock-div">
       <header>
-        <h2>Información General</h2>
-        <p>Ingresos y egresos de forma sencilla</p>
+        <h2>{{$t('home.secondSection')}}</h2>
+        <p>{{$t('home.secondSectionSubtitle')}}</p>
       </header>
       <section class="InformacionGeneral">
         <div class="ContainerIG">
           <div class="BoxIG">
             <p class="texto-prop">
-              Stocker está diseñado para satisfacer las necesidades de los negocios pequeños, permitiendo el registro y gestión eficiente de clientes, proveedores, inventarios, ventas, compras, ganancias y perfiles comerciales.<br><br>
+              {{$t('home.secondSectionText')}}
             </p>
           </div>
         </div>
