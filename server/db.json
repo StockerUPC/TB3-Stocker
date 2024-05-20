@@ -1,0 +1,356 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Admin",
+      "email": "usuario1@gmail.com",
+      "password": "admin"
+    }
+  ],
+  "products": [
+    {
+      "id": "P1",
+      "name": "Inca Kola",
+      "category": "Bebidas",
+      "photoUrl": "https://img001.prntscr.com/file/img001/3mrhZxpQRRWoP-wQs0xKTg.png",
+      "price": 3.5,
+      "quantity": 100,
+      "expiryDate": "2024-12-31",
+      "available": true
+    },
+    {
+      "id": "P2",
+      "name": "Chicha Morada",
+      "category": "Bebidas",
+      "photoUrl": "https://img001.prntscr.com/file/img001/Bl9DxEpkTy6t_aZYFhcTpQ.png",
+      "price": 2.5,
+      "quantity": 150,
+      "expiryDate": "2024-01-31",
+      "available": true
+    },
+    {
+      "id": "P3",
+      "name": "Pisco",
+      "category": "Bebidas",
+      "photoUrl": "https://img001.prntscr.com/file/img001/GaGl0Y0GTAuNDt1O-5gScA.png",
+      "price": 30,
+      "quantity": 200,
+      "expiryDate": "2024-02-28",
+      "available": false
+    },
+    {
+      "id": "P4",
+      "name": "Cusqueña",
+      "category": "Bebidas",
+      "photoUrl": "https://img001.prntscr.com/file/img001/7vn0VS4rTzeVRHULBe0Bxw.png",
+      "price": 4,
+      "quantity": 250,
+      "expiryDate": "2024-03-31",
+      "available": true
+    },
+    {
+      "id": "P5",
+      "name": "Sublime",
+      "category": "Golosinas",
+      "photoUrl": "https://img001.prntscr.com/file/img001/y230FfPFTXycFNrb9wNrug.png",
+      "price": 1,
+      "quantity": 300,
+      "expiryDate": "2024-04-30",
+      "available": false
+    },
+    {
+      "id": "P6",
+      "name": "Panetón Donofrio",
+      "category": "Golosinas",
+      "photoUrl": "https://img001.prntscr.com/file/img001/toycXVzQSJKnU0wIhtnTQQ.png",
+      "price": 1.5,
+      "quantity": 350,
+      "expiryDate": "2024-05-31",
+      "available": true
+    },
+    {
+      "id": "P7",
+      "name": "Leche Gloria",
+      "category": "Lácteos",
+      "photoUrl": "https://img001.prntscr.com/file/img001/_-ucOV_MRY2-VOwaznI4Qg.png",
+      "price": 2.8,
+      "quantity": 400,
+      "expiryDate": "2024-06-30",
+      "available": false
+    },
+    {
+      "id": "P8",
+      "name": "Detergente Bolívar",
+      "category": "Limpieza",
+      "photoUrl": "https://img001.prntscr.com/file/img001/p_TKJTr6Tl-BKYWZ5xIGPA.png",
+      "price": 10,
+      "quantity": 450,
+      "expiryDate": "2024-07-31",
+      "available": true
+    },
+    {
+      "id": "P9",
+      "name": "Arroz Costeño",
+      "category": "Granos",
+      "photoUrl": "https://img001.prntscr.com/file/img001/BPbsfKhBSkKEg41TUWmjSg.png",
+      "price": 2.5,
+      "quantity": 500,
+      "expiryDate": "2024-08-31",
+      "available": false
+    },
+    {
+      "id": "P10",
+      "name": "Aceite Primor",
+      "category": "Aceites",
+      "photoUrl": "https://img001.prntscr.com/file/img001/mCgpqzXDR1eS46zD20z15A.png",
+      "price": 6,
+      "quantity": 550,
+      "expiryDate": "2024-09-30",
+      "available": true
+    }
+  ],
+  "suppliers": [
+    {
+      "id": "S1",
+      "name": "Proveedor 1",
+      "product": "Inca Kola",
+      "number": "+51 123456789",
+      "email": "proveedor1@example.com",
+      "type": "Taking Return",
+      "deliveryDays": 5
+    },
+    {
+      "id": "S2",
+      "name": "Proveedor 2",
+      "product": "Chicha Morada",
+      "number": "+51 987657321",
+      "email": "proveedor2@example.com",
+      "type": "Not Taking Return",
+      "deliveryDays": 3
+    },
+    {
+      "id": "S03",
+      "name": "Proveedor 3",
+      "product": "Pisco",
+      "number": "+51 123456789",
+      "email": "proveedor3@example.com",
+      "type": "Taking Return",
+      "deliveryDays": 3
+    },
+    {
+      "id": "S04",
+      "name": "Proveedor 4",
+      "product": "Cusqueña",
+      "number": "+51 987654321",
+      "email": "proveedor4@example.com",
+      "type": "Not Taking Return",
+      "deliveryDays": 7
+    },
+    {
+      "id": "S05",
+      "name": "Proveedor 5",
+      "product": "Sublime",
+      "number": "+51 123486789",
+      "email": "proveedor5@example.com",
+      "type": "Taking Return",
+      "deliveryDays": 15
+    },
+    {
+      "id": "S06",
+      "name": "Proveedor 6",
+      "product": "Donofrio",
+      "number": "+51 987334321",
+      "email": "proveedor6@example.com",
+      "type": "Not Taking Return",
+      "deliveryDays": 20
+    },
+    {
+      "id": "S07",
+      "name": "Proveedor 7",
+      "product": "Gloria",
+      "number": "+51 123456789",
+      "email": "proveedor7@example.com",
+      "type": "Taking Return",
+      "deliveryDays": 8
+    },
+    {
+      "id": "S08",
+      "name": "Proveedor 8",
+      "product": "Detergente Bolívar",
+      "number": "+51 987654321",
+      "email": "proveedor8@example.com",
+      "type": "Not Taking Return",
+      "deliveryDays": 0
+    },
+    {
+      "id": "S09",
+      "name": "Proveedor 9",
+      "product": "Arroz Costeño",
+      "number": "+51 123456789",
+      "email": "proveedor9@example.com",
+      "type": "Taking Return",
+      "deliveryDays": 3
+    },
+    {
+      "id": "S10",
+      "name": "Proveedor 10",
+      "product": "Aceite Primor",
+      "number": "+51 987454321",
+      "email": "proveedor10@example.com",
+      "type": "Not Taking Return",
+      "deliveryDays": 2
+    },
+    {
+      "id": "S11",
+      "name": "Proveedor 11",
+      "product": "Atún Primor",
+      "number": "+51 123456789",
+      "email": "proveedor11@example.com",
+      "type": "Taking Return",
+      "deliveryDays": 5
+    },
+    {
+      "id": "S12",
+      "name": "Proveedor 12",
+      "product": "Galleta Morocha",
+      "number": "+51 985654821",
+      "email": "proveedor12@example.com",
+      "type": "Not Taking Return",
+      "deliveryDays": 11
+    },
+    {
+      "id": "S13",
+      "name": "Proveedor 13",
+      "product": "Leche Gloria",
+      "number": "+51 123456789",
+      "email": "proveedor13@example.com",
+      "type": "Taking Return",
+      "deliveryDays": 6
+    },
+    {
+      "id": "S14",
+      "name": "Proveedor 14",
+      "product": "Yogurt Gloria",
+      "number": "+51 987654321",
+      "email": "proveedor14@example.com",
+      "type": "Not Taking Return",
+      "deliveryDays": 9
+    },
+    {
+      "id": "S15",
+      "name": "Proveedor 15",
+      "product": "Azúcar Rubia",
+      "number": "+51 123456789",
+      "email": "proveedor15@example.com",
+      "type": "Taking Return",
+      "deliveryDays": 4
+    }
+  ],
+  "orders": [
+    {
+      "id": "O01",
+      "productId": "P1",
+      "quantity": 10,
+      "deliveryDate": "2024-12-31",
+      "status": "Confirmed"
+    },
+    {
+      "id": "O02",
+      "productId": "P1",
+      "quantity": 20,
+      "deliveryDate": "2024-06-30",
+      "status": "Out for delivery"
+    },
+    {
+      "id": "O03",
+      "productId": "P3",
+      "quantity": 10,
+      "deliveryDate": "2024-05-31",
+      "status": "Returned"
+    },
+    {
+      "id": "O04",
+      "productId": "P4",
+      "quantity": 20,
+      "deliveryDate": "2024-06-30",
+      "status": "Delayed"
+    },
+    {
+      "id": "O05",
+      "productId": "P5",
+      "quantity": 10,
+      "deliveryDate": "2024-05-31",
+      "status": "Confirmed"
+    },
+    {
+      "id": "O06",
+      "productId": "P6",
+      "quantity": 20,
+      "deliveryDate": "2024-06-30",
+      "status": "Out for delivery"
+    },
+    {
+      "id": "O07",
+      "productId": "P7",
+      "quantity": 10,
+      "deliveryDate": "2024-05-31",
+      "status": "Delayed"
+    },
+    {
+      "id": "O08",
+      "productId": "P8",
+      "quantity": 20,
+      "deliveryDate": "2024-06-30",
+      "status": "Returned"
+    },
+    {
+      "id": "O09",
+      "productId": "P9",
+      "quantity": 10,
+      "deliveryDate": "2024-05-31",
+      "status": "Confirmed"
+    },
+    {
+      "id": "O10",
+      "productId": "P10",
+      "quantity": 20,
+      "deliveryDate": "2024-06-30",
+      "status": "Delayed"
+    },
+    {
+      "id": "O11",
+      "productId": "P11",
+      "quantity": 10,
+      "deliveryDate": "2024-05-31",
+      "status": "Confirmed"
+    },
+    {
+      "id": "O12",
+      "productId": "P12",
+      "quantity": 20,
+      "deliveryDate": "2024-06-30",
+      "status": "Out for delivery"
+    },
+    {
+      "id": "O13",
+      "productId": "P13",
+      "quantity": 10,
+      "deliveryDate": "2024-05-31",
+      "status": "Confirmed"
+    },
+    {
+      "id": "O14",
+      "productId": "P14",
+      "quantity": 20,
+      "deliveryDate": "2024-06-30",
+      "status": "Returned"
+    },
+    {
+      "id": "O15",
+      "productId": "P15",
+      "quantity": 20,
+      "deliveryDate": "2024-06-30",
+      "status": "Returned"
+    }
+  ]
+}
