@@ -8,13 +8,38 @@ export default {
       items: [
         {
           label: 'Español',
-          icon: 'language_spanish',
+          icon: 'src/assets/images/flags_icons/spain.webp',
           command: ()=> {this.changeLanguage('es');}
         },
         {
           label: 'English',
-          icon: 'language_us',
+          icon: 'src/assets/images/flags_icons/usa.webp',
           command: ()=> {this.changeLanguage('en');}
+        },
+        {
+          label: 'Português',
+          icon: 'src/assets/images/flags_icons/portugal.webp',
+          command: ()=> {this.changeLanguage('pt_br');}
+        },
+        {
+          label: 'Deutsch',
+          icon: 'src/assets/images/flags_icons/germany.webp',
+          command: ()=> {this.changeLanguage('de');}
+        },
+        {
+          label: 'Italiano',
+          icon: 'src/assets/images/flags_icons/italy.webp',
+          command: ()=> {this.changeLanguage('it');}
+        },
+        {
+          label: 'Français',
+          icon: 'src/assets/images/flags_icons/france.webp',
+          command: ()=> {this.changeLanguage('fr');}
+        },
+        {
+          label: '한국인',
+          icon: 'src/assets/images/flags_icons/korea.webp',
+          command: ()=> {this.changeLanguage('ko');}
         }
       ]
     }
@@ -42,9 +67,7 @@ export default {
               </span>
             </template>
             <template v-slot:menuitemicon="{ item }">
-              <span class="material-symbols-outlined">
-                {{ item.icon }}
-              </span>
+              <img :src="item.icon" alt="language_icon" style="width: 2rem; padding-right: 10px"/>
             </template>
           </pv-splitbutton>
         </li>
