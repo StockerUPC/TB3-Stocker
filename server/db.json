@@ -1,0 +1,42 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Admin",
+      "email": "usuario1@gmail.com",
+      "password": "admin"
+    }
+  ],
+  "products": [
+    {
+      "name": "camote",
+      "id": 1,
+      "price": "5",
+      "quantity": "100",
+      "category": "sdas",
+      "expiryDate": "2024-05-31",
+      "photoUrl": "https://img001.prntscr.com/file/img001/-6cLaY5vQfSrtf3jhGYmHg.png"
+    },
+    {
+      "name": "papa",
+      "id": 2
+    }
+  ],
+  "suppliers": [],
+  "orders": [
+    {
+      "productId": "papa",
+      "quantity": "100",
+      "deliveryDate": "harold",
+      "collectionId": null,
+      "id": 1
+    },
+    {
+      "productId": "camote",
+      "quantity": "100",
+      "deliveryDate": "barturen",
+      "collectionId": null,
+      "id": 2
+    }
+  ]
+}
