@@ -1,5 +1,6 @@
 <script>
 import Swal from 'sweetalert2'
+import authService from "../../services/auth.service.js";
 
 export default {
   name: "subscription",
@@ -20,12 +21,6 @@ export default {
         confirmButtonText: 'Genial!',
         confirmButtonColor: '#3085d6',
         background: '#18181b',
-        backdrop: `
-          rgba(130, 180, 126, 0.4)
-          url("/images/nyan-cat.gif")
-          left top
-          no-repeat
-        `
       }).then((result) => {
         if (result.isConfirmed) {
           this.$router.push('/login')
@@ -35,7 +30,6 @@ export default {
   }
 }
 </script>
-
 <template>
   <div class="containerS">
     <div class="boxS" v-for="plan in plans" :key="plan.name">
@@ -58,29 +52,32 @@ export default {
 
 <style scoped>
 
-.containerS{
+.containerS {
   width: 90%;
+  height: 100vh;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-gap: 2rem;
-  padding: 1rem 0;
-  animation: fadeIn 1s;
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
-.boxS{
+
+.boxS {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   min-height: 400px;
-  padding: 2rem;
+  padding: 1.5rem;
   background-color: #18181b;
   color: #fff;
   border: 1px solid #214729;
   border-radius: 10px;
   transition: transform 0.3s, box-shadow 0.3s;
   align-items: center;
+  margin: 2.5rem;
 }
+
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
