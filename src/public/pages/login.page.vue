@@ -1,6 +1,6 @@
 <script>
 import hdSectionLoginComponent from '../components/hd-section-login.component.vue';
-import apiService from '../../logistics/services/stocker-api.service.js';
+import authService from '../../logistics/services/auth.service.js'; // Importar authService en lugar de apiService
 import router from '../../router/index.js';
 
 export default {
@@ -23,26 +23,26 @@ export default {
     };
   },
   methods: {
-    async register() {
+    register() {
       if(this.registerForm.name && this.registerForm.email && this.registerForm.password) {
-        const user = await apiService.registerUser(this.registerForm);
+        const user = authService.registerUser(this.registerForm);
         if(user) {
           console.log('Registro exitoso:', user);
           this.user = user;
-          await router.push('/stocker/dashboard');
+          router.push('/subscription');
         } else {
           console.log('Error en el registro. Verifique sus datos.');
         }
       }
       this.registerForm = {};
     },
-    async login() {
+    login() {
       if(this.loginForm.email && this.loginForm.password) {
-        const user = await apiService.loginUser(this.loginForm);
+        const user = authService.loginUser(this.loginForm); /
         if(user) {
           console.log('Inicio de sesión exitoso:', user);
           this.user = user;
-          await router.push('/stocker/dashboard');
+          router.push('/stocker/dashboard');
         } else {
           console.log('Error en el inicio de sesión. Verifique sus credenciales.');
         }
@@ -52,7 +52,6 @@ export default {
   }
 }
 </script>
-
 <template>
   <hd-section-login/>
   <body>
