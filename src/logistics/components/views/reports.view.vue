@@ -1,8 +1,18 @@
 <script>
 import {Product} from "../../model/product.entity.js";
 import apiService from "../../../logistics/services/stocker-api.service.js";
+
+import Grafico1 from "../graphic-bar.component.vue";
+import GraficoPie from "../graphic-pie.component.vue";
+import GraficoLine from "../graphic-line.component.vue";
+
 export default {
   name: "inventory",
+  components: {
+    Grafico1,
+    GraficoPie,
+    GraficoLine
+  },
   data() {
     return {
       products: []
@@ -50,19 +60,19 @@ export default {
         <div class="containerS">
           <div class="boxS">
             <h3>{{$t('reports.overview')}}</h3>
-            <img class="chart1" src="../../../assets/images/other_imgs/overview.png"/>
+            <Grafico1 />   <!-- -->
           </div>
 
           <div class="boxS">
             <h3>{{$t('reports.bestSelling')}}</h3>
-            <img class="chart1" src="../../../assets/images/other_imgs/bestSellingCategory.png"/>
+            <GraficoPie /> <!-- -->
           </div>
         </div>
 
         <div class="containerS2">
           <div class="boxS">
             <h3>{{$t('reports.profitRevenue')}}</h3>
-            <img class="chart1" src="../../../assets/images/other_imgs/profit.png"/>
+            <GraficoLine /> <!-- -->
           </div>
         </div>
         <div class="containerS2">
