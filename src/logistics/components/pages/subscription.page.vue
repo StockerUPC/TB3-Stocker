@@ -51,7 +51,6 @@ export default {
 </template>
 
 <style scoped>
-
 .containerS {
   width: 90%;
   height: 100vh;
