@@ -38,7 +38,7 @@ export default {
     },
     login() {
       if(this.loginForm.email && this.loginForm.password) {
-        const user = authService.loginUser(this.loginForm); /
+        const user = authService.loginUser(this.loginForm);
         if(user) {
           console.log('Inicio de sesión exitoso:', user);
           this.user = user;
