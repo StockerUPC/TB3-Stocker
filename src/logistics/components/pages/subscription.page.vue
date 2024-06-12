@@ -7,8 +7,8 @@ export default {
   data() {
     return {
       plans: [
-        { name: 'Basic', price: 5, features: ['barturen gay', 'barturen cabro'] },
-        { name: 'Premium', price: 15, features: ['bartupeneeeeeeeeeeee', 'bartugaay'] }
+        { name: 'Basic', price: 5, features: ['Ingresar hasta 100 registros', 'Soporte por correo electrónico'] },
+        { name: 'Premium', price: 15, features: ['Registros ilimitados', 'Soporte prioritario 24/7', 'Acceso a funciones avanzadas'] }
       ]
     };
   },
