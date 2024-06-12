@@ -42,7 +42,7 @@ export default {
         if(user) {
           console.log('Inicio de sesión exitoso:', user);
           this.user = user;
-          router.push('/stocker/dashboard');
+          router.push('/stocker/inventory');
         } else {
           console.log('Error en el inicio de sesión. Verifique sus credenciales.');
         }
